@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CU Messenger App</string>
+    <string name="cu_uid">Cu Uid</string>
+    <string name="cuchd_email_id">cuchd email id</string>
+    <string name="password">password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_account">Already Have Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">UserName</string>
+    <string name="type_a_message">Type a Message</string>
+    <string name="user_name">User Name</string>
+    <string name="textview">TextView</string>
+    <string name="_22_43_pm">22:43 pm</string>
+    <string name="_21_31">21:31</string>
+
+</resources>

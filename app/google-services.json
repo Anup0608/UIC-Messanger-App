@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "833166594477",
+    "project_id": "uic-messenger-98e44",
+    "storage_bucket": "uic-messenger-98e44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833166594477:android:fa83e691c4886c90c2d124",
+        "android_client_info": {
+          "package_name": "com.example.cumessengerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833166594477-sl6k9fd660ieuuul82a3j8vc6ldsbq43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd1eigERfWb38UNpmfR6rsFKO9UPLupJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833166594477-sl6k9fd660ieuuul82a3j8vc6ldsbq43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
