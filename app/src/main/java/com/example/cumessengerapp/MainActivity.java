@@ -49,8 +49,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.groupChat:
-                Intent intent1=new Intent(MainActivity.this,GroupChatActivity.class);
-                startActivity(intent1);
+                Intent intentt=new Intent(MainActivity.this,GroupChatActivity.class);
+                startActivity(intentt);
+                //Toast.makeText(this,"group vhat",Toast.LENGTH_LONG).show();
+                break;
 
         }
         return true;

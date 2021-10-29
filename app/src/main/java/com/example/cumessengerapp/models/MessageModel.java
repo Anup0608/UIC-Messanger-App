@@ -1,14 +1,17 @@
 package com.example.cumessengerapp.models;
 
 public class MessageModel {
-    String uId,message,messageId;
+    String uId,message,messageId,senderId;
     Long timestamp;
+
+
 
 
     public MessageModel(String uId, String message, Long timestamp) {
         this.uId = uId;
         this.message = message;
         this.timestamp = timestamp;
+
     }
 
     public MessageModel(String uId, String message) {
@@ -23,6 +26,14 @@ public class MessageModel {
 
     public String getMessageId() {
         return messageId;
+    }
+
+    public String getSenderId() {
+        return senderId;
+    }
+
+    public void setSenderId(String senderId) {
+        this.senderId = senderId;
     }
 
     public void setMessageId(String messageId) {
