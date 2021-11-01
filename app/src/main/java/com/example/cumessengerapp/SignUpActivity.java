@@ -42,9 +42,15 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //email validation
+                //email password validation
+                if(binding.etcuUid.getText().toString().isEmpty()) {
+                    binding.etcuUid.setError("Enter your cu uid");
+                }
+                if(binding.etPassword.getText().toString().isEmpty()) {
+                    binding.etPassword.setError("Enter your password");
+                }
                 if(binding.etEmail.getText().toString().isEmpty()) {
-                    Toast.makeText(getApplicationContext(),"enter email address",Toast.LENGTH_SHORT).show();
+                    binding.etEmail.setError("Enter your email");
                 }else {
                     progressDialog.show();
                     if (binding.etEmail.getText().toString().trim().matches(emailPattern)) {

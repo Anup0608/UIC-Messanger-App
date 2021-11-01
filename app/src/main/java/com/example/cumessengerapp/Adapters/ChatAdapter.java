@@ -68,7 +68,7 @@ public class ChatAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         MessageModel messageModel=messageModels.get(position);
-        /*holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
                 new AlertDialog.Builder(context).setTitle("Delete")
@@ -93,7 +93,7 @@ public class ChatAdapter extends RecyclerView.Adapter {
 
                 return false;
             }
-        });*/
+        });
 
 
         if (holder.getClass()==SenderViewHolder.class)

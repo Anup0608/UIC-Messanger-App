@@ -34,6 +34,7 @@ public class GroupChatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding= ActivityGroupChatBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().hide();
         database=FirebaseDatabase.getInstance();
         auth=FirebaseAuth.getInstance();
 
@@ -65,6 +66,9 @@ public class GroupChatActivity extends AppCompatActivity {
         binding.send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(binding.etMessage.getText().toString().isEmpty()) {
+                    binding.etMessage.setError("Enter message here");
+                }
                 final String message=binding.etMessage.getText().toString();
                 final GroupMessageModel model=new GroupMessageModel(senderId,message);
                 model.setTimestamp(new Date().getTime());
@@ -108,6 +112,7 @@ public class GroupChatActivity extends AppCompatActivity {
                 for (DataSnapshot snapshot1:snapshot.getChildren())
                 {
                     GroupMessageModel model=snapshot1.getValue(GroupMessageModel.class);
+                    model.setMessageId(snapshot1.getKey());
                     messageModels.add(model);
                 }
                 adapter.notifyDataSetChanged();

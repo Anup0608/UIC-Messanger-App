@@ -1,9 +1,9 @@
 package com.example.cumessengerapp.models;
 
 public class Users {
-    String profilepic,userName,clgUid,email,password,lastMessage,userId;
+    String profilepic,userName,clgUid,email,password,lastMessage,userId,status;
 
-    public Users(String profilepic, String userName, String clgUid, String email, String password, String lastMessage, String userId) {
+    public Users(String profilepic, String userName, String clgUid, String email, String password, String lastMessage, String userId, String status) {
         this.profilepic = profilepic;
         this.userName = userName;
         this.clgUid = clgUid;
@@ -11,7 +11,9 @@ public class Users {
         this.password = password;
         this.lastMessage = lastMessage;
         this.userId = userId;
+        this.status = status;
     }
+
     public Users(){}
     //signup constructor
     public Users(String userName, String clgUid, String email, String password) {
@@ -19,6 +21,14 @@ public class Users {
         this.clgUid = clgUid;
         this.email = email;
         this.password = password;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     public String getUserId() {

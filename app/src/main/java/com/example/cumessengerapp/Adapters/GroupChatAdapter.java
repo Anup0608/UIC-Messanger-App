@@ -1,6 +1,8 @@
 package com.example.cumessengerapp.Adapters;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cumessengerapp.R;
 import com.example.cumessengerapp.models.GroupMessageModel;
-import com.example.cumessengerapp.models.MessageModel;
 import com.example.cumessengerapp.models.Users;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -45,12 +46,6 @@ public class GroupChatAdapter extends RecyclerView.Adapter {
         this.recId = recId;
     }
 
-    /*public GroupChatAdapter(ArrayList<GroupMessageModel> messageModels, ArrayList<Users> list, Context context, String recId) {
-        this.messageModels = messageModels;
-        this.list = list;
-        this.context = context;
-        this.recId = recId;
-    }*/
 
     @NonNull
     @Override
@@ -81,7 +76,7 @@ public class GroupChatAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         GroupMessageModel messageModel=messageModels.get(position);
-        /*holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
                 new AlertDialog.Builder(context).setTitle("Delete")
@@ -90,8 +85,8 @@ public class GroupChatAdapter extends RecyclerView.Adapter {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 FirebaseDatabase database=FirebaseDatabase.getInstance();
-                                String senderRoom=FirebaseAuth.getInstance().getUid()+recId;
-                                database.getReference().child("chats").child(senderRoom)
+                                //String senderRoom=FirebaseAuth.getInstance().getUid();
+                                database.getReference().child("Group Chats")
                                         .child(messageModel.getMessageId())
                                         .setValue(null);
 
@@ -106,7 +101,7 @@ public class GroupChatAdapter extends RecyclerView.Adapter {
 
                 return false;
             }
-        });*/
+        });
 
 
 

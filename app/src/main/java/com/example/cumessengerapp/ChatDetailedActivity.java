@@ -33,6 +33,7 @@ public class ChatDetailedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityChatDetailedBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().hide();
         database=FirebaseDatabase.getInstance();
         auth=FirebaseAuth.getInstance();
 
@@ -70,6 +71,7 @@ public class ChatDetailedActivity extends AppCompatActivity {
                 for (DataSnapshot snapshot1:snapshot.getChildren())
                 {
                     MessageModel model=snapshot1.getValue(MessageModel.class);
+                    model.setMessageId(snapshot1.getKey());
                     messageModels.add(model);
                 }
                 chatAdapter.notifyDataSetChanged();
@@ -85,6 +87,9 @@ public class ChatDetailedActivity extends AppCompatActivity {
         binding.send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(binding.etMessage.getText().toString().isEmpty()) {
+                    binding.etMessage.setError("Enter message here");
+                }
                 String message=binding.etMessage.getText().toString();
                 final MessageModel model=new MessageModel(senderId,message);
                 model.setTimestamp(new Date().getTime());

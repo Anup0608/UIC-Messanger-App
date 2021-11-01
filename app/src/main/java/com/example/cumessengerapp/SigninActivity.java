@@ -36,9 +36,12 @@ public class SigninActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                //email validation
+                //email password validation
+                if(binding.etpassword.getText().toString().isEmpty()) {
+                    binding.etpassword.setError("Enter your password");
+                }
                 if(binding.etemail.getText().toString().isEmpty()) {
-                    Toast.makeText(getApplicationContext(),"enter email address",Toast.LENGTH_SHORT).show();
+                    binding.etemail.setError("Enter your email");
                 }else {
                     progressDialog.show();
 

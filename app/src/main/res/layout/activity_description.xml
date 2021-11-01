@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/w3"
+    tools:context=".DescriptionActivity">
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/leftarrow"
+        app:tint="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:text="The UIC MESSANGER is an app for the students of CHANDIGARH UNIVERSITY of University Institute Computing [UIC] Department only. Which provide user friendly environment to chat and it is easy to use. The user interface will be very secure as it will depend on Authorization and Authentication.
+The user must be from the UIC department of Chandigarh University only, for accessing the app he needs to first sign up from the official mail Id of Chandigarh University only [like-20mca1435@cuchd.in].
+This UIC MESSANGER app are used for instant messaging or group chats. Our objective is to make the UIC messenger secure as possible so that students who are from particular departments will use it without any hesitation and fear of data leaks. Communication through internet is becoming vital these days. An online communication allows the users to communicate with other people in a fast and convenient way. Considering this, the online communication application must be able share the texts or images or any other files in a faster way with minimum delay or with no delay. Firebase is one of the platforms which provides a real-time database and cloud services which allows the developer to make these applications with ease. Instant messaging can be considered as a platform to maintain communication. Android provides better platform to develop various applications for instant messaging compared to other platforms.
+
+Our main objective in this project is to overcome from some challenges which are present in existing system such as communication gap between students as from last one and half year we are interacting others virtually just because of pandemic. As we know the difference between to interact physically and virtually. So, our mission from this messenger Application is primarily meant based group chat to refer to direct one-on-one chat or text. So, the students who are from Chandigarh University can join and they can share their views, clear their query and so on."
+            android:textAlignment="gravity"
+            android:scrollbars="vertical"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

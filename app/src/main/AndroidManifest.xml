@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CUMessengerApp">
         <activity
+            android:name=".DescriptionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ExtraActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true" />
+        <activity
             android:name=".GroupChatActivity"
             android:exported="true" />
         <activity
