@@ -23,7 +23,7 @@ public class FragmentsAdapter extends FragmentPagerAdapter {
         switch (position){
             case 0: return new ChatsFragment();
             case 1: return new StatusFragment();
-            case 2: return new CallsFragment();
+            //case 2: return new CallsFragment();
             default:return new ChatsFragment();
         }
 
@@ -32,7 +32,7 @@ public class FragmentsAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 2;
     }
 
     @Nullable
@@ -47,10 +47,7 @@ public class FragmentsAdapter extends FragmentPagerAdapter {
         {
             title="STATUS";
         }
-        if (position==2)
-        {
-            title="CALLS";
-        }
+
         return title;
     }
 }
