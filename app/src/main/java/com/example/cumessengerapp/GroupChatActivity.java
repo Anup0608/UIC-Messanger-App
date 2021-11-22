@@ -84,27 +84,6 @@ public class GroupChatActivity extends AppCompatActivity {
 
             }
         });
-        /*database.getReference().child("Users").child(senderId)
-                .addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists())
-                        {
-                            Users user=snapshot.getValue(Users.class);
-
-                            user.getUserName();
-
-                        }
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-
-                    }
-                });*/
-
-
-
         database.getReference().child("Group Chats").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

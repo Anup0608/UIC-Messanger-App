@@ -63,6 +63,13 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.aboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(SettingsActivity.this,AboutusActivity.class);
+                startActivity(intent);
+            }
+        });
 
         binding.btnsave.setOnClickListener(new View.OnClickListener() {
             @Override

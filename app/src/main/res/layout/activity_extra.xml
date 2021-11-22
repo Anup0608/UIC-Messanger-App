@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="srivastavanup250@gmail.com"
+        android:text="Anup Srivastava srivastavanup250@gmail.com"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="manishasrivastava2404@gmail.com"
+        android:text="Manisha Srivastava manishasrivastava2404@gmail.com"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold" />

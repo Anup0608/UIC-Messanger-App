@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CUMessengerApp">
         <activity
+            android:name=".AboutusActivity"
+            android:exported="true" />
+        <activity
             android:name=".DescriptionActivity"
             android:exported="true" />
         <activity
